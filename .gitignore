@@ -1,0 +1,7 @@
+.build/
+.swiftpm/
+.DS_Store
+dist/
+work/
+BUILD-REPORT.md
+*.dSYM/
