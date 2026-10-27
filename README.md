@@ -46,18 +46,6 @@ DNS filtering has limits:
 
 For browser ads, a content blocker can help: [uBlock Origin for Firefox](https://github.com/gorhill/uBlock), [uBlock Origin Lite for Chromium](https://github.com/uBlockOrigin/uBOL-home), or [AdGuard Mini for Safari](https://github.com/AdguardTeam/AdGuardMiniForMac).
 
-## BlueStacks
-
-Filtering may work inside BlueStacks if the emulator forwards DNS to the Mac. A game or Android's Private DNS setting can use a separate resolver, so coverage needs to be checked locally.
-
-1. Enable QuietDNS, then fully quit and reopen BlueStacks.
-2. Open [AdGuard's test page](https://adguard.com/en/test.html) in the browser **inside BlueStacks**. Check the AdGuard DNS result.
-3. Test the actual game separately. A browser result does not prove that every game uses the same DNS path. Rewarded videos may stop loading or stop granting rewards.
-
-If the check fails, inspect Android's **Network & internet → Private DNS**, if available. A separately configured provider bypasses the Mac's toggle. Another option is the Private DNS hostname `dns.adguard-dns.com`, but that setting is independent of QuietDNS and must be turned off separately.
-
-BlueStacks 5 has a [setting for its own gameplay ads](https://support.bluestacks.com/hc/en-us/articles/10721739047309-How-to-disable-ads-in-BlueStacks-5). That is separate from ads inside games. An equivalent in BlueStacks Air for Mac has not been verified.
-
 ## DNS providers and privacy
 
 AdGuard DNS is the default. Its public filtering servers are:
